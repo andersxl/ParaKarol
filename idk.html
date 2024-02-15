@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            text-align: left;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .emojis {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+            <h1>¡Feliz Cumpleaños Karito! 🎉🎂🎈</h1>
+            <h5> Presiona iniciar música porfa :3 </h5>
+            <h5> Y ahora "Para mi mujer" JSAJJASK  </h5>
+        <button class="button" onclick="iniciarMusica()">Iniciar música</button>
+        <button class="button" onclick="mostrarMensaje()">Para mi mujer</button>
+        <div id="mensaje" style="display:none;">
+            <p>Hoy, mientras celebramos otro año de tu vida, quiero recordarte cuán increíblemente especial eres. Eres un faro de luz en un mundo a veces oscuro, y tu mera presencia me hace sentir tan feliz. Te pido perdón por si alguna vez te falté el respeto y perdón también porque ahora no tengo tanto tiempo para ti, pero quiero que sepas que siempre te voy a querer mucho, y que siempre llevarás un espacio en mi corazoncito.</p>
+            <p>En este nuevo año de tu vida, quiero que sepas que estoy aquí para ti en cada paso del camino. No importa qué desafíos puedan surgir ni qué sueños puedan perseguirse, siempre estaré aquí para apoyarte, animarte y celebrar tus éxitos contigo. Juntos, podemos conquistar el mundo y crear recuerdos aún más preciosos que atesorar para siempre.</p>
+            <p>Espero un día poder vernos, abrazarnos y compartir todas esas historias que nos han estado esperando pacientemente. Que este día esté lleno de alegría, amor y todas las cosas maravillosas que te mereces. Que cada momento esté impregnado de magia y que tus sueños más profundos se hagan realidad. Feliz cumpleaños, Karito. Gracias por ser la luz de mi vida y por llenar cada día con tu hermosa presencia <3.</p>
+            <img src="imagen_de_cumpleaños.png" alt="Feliz Cumpleaños">
+        </div>
+    </div>
+
+    <!-- Elemento de audio oculto para reproducir la música -->
+    <audio id="musica" src="ruta_de_tu_musica.m4a"></audio>
+
+    <script>
+        function iniciarMusica() {
+            var audio = document.getElementById("musica");
+            audio.play();
+        }
+
+        function mostrarMensaje() {
+            document.getElementById("mensaje").style.display = "block";
+        }
+    </script>
+</body>
+</html>
